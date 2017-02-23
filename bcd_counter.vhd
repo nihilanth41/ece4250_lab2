@@ -50,6 +50,6 @@ begin
     end if;
 
   end process;
-  Q <= std_logic_vector(COUNT);
-  CO <= Co_tmp;
+  	Q <= std_logic_vector(COUNT);
+	CO <= '1' when input="01" and UP='1' and count = 9 else '1' when (input="01" and UP='0' and count = 0 ) else '0';
 end Equations;
