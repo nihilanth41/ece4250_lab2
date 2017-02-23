@@ -46,10 +46,10 @@ begin
           Co_tmp <= '0';
         end if;
       end if;
-	
+      
     end if;
 
-    end process;
-    Q <= std_logic_vector(COUNT);
-    CO <= Co_tmp;
+  end process;
+  Q <= std_logic_vector(COUNT);
+  CO <= Co_tmp;
 end Equations;
